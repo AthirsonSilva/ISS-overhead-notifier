@@ -13,11 +13,9 @@ LNG = -46.423770
 def near_me():
     '''
     ISS near user checker
-
     Gets the current user latitude and longitude cordinates
     and if the ISS satelyte is near him by plus or minus 5 or less
     it will return True
-
     Returns:
         bool: Returns True or False accordingly to the conditional check
     '''
@@ -42,10 +40,8 @@ def near_me():
 def is_dark():
     '''
     Night-time checker
-
     Checks if, in the user latitude and longitude cordinates,
     is night-time accordingly to the sunset-sunrise API reponse
-
     Returns:
         bool: Returns True or False accordingly to the conditional check
     '''
@@ -61,13 +57,10 @@ def is_dark():
 def email_sending(addrs):
     '''
     Email sender
-
     Simply sends a email to the destination
     provided on the function params
-
     Args:
         addrs (str): The destination email address
-
     Returns:
         str: A success message flag to know if the opperation was successfull
     '''
@@ -88,7 +81,6 @@ def email_sending(addrs):
 def main():
     '''
     Main code
-
     This function only exists so i can run it 
     every 60 seconds, nothing more
     '''
