@@ -48,7 +48,7 @@ def is_dark():
 
     global time_now, sunset
 
-    if time_now.hour == sunset:
+    if time_now.hour >= sunset or time_now.hour <= sunrise:
         return True
 
     return False
